@@ -4,9 +4,11 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Testver1 from './features/Testver1'
 import Testver2 from './features/Testver2'
+import { Link } from 'react-router-dom'
+
 function App() {
   const [count, setCount] = useState(0)
-
+  
   return (
     <div className="App">
       {/* <div>
@@ -18,6 +20,7 @@ function App() {
         </a>
       </div> */}
       <h1>Vite + React</h1>
+      <Link to={'todo'}>go to todo / react-form test</Link>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
